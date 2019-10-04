@@ -2,6 +2,7 @@ version: '3'
 
 services:
   drupal:
+    container_name: drupal
     image: drupal:8.7.8-apache
     ports: 
       - '80:80'
@@ -11,6 +12,7 @@ services:
       - drupal-sites:/var/www/html/sites      
       - drupal-themes:/var/www/html/themes
   postgres:
+    container_name: postgres
     image: postgres:10
     environment:
       POSTGRES_PASSWORD: 4rfv$RFV
