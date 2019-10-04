@@ -15,7 +15,7 @@ services:
     container_name: postgres
     image: postgres:10
     environment:
-    POSTGRES_PASSWORD: 4rfv$RFV
+      - POSTGRES_PASSWORD: 4rfv$RFV
     volumes:
       - drupal-data:/var/lib/postgresql/data
 
